@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: Montserrat;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+
+main{
+    background-color: whitesmoke;
+    height: 900px
+    ;
+        /*background-color: #141513;*/
+}
+
+
+.logo{
+    width: 125px;
+    cursor: pointer;
+}
+
+li, a{
+    font-family: sans-serif;
+    font-size: 15px;
+    /*color: #edf0f1;*/
+    text-decoration: none;
+    list-style: none;
+    /*display: inline-block;
+    margin-right: 10px;*/
+    color: black;
+    text-transform: uppercase;
+}
+
+header{
+    width: 100%;
+    /*border: 2px solid;*/
+    height: 96px;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.nav__links li{
+    display: inline-block;
+    padding: 0 15px;
+    text-decoration: none;
+    line-height: 30px
+}
+
+.assembleia__h1{
+    color: black;
+    cursor:default;
+    white-space: nowrap;
+    margin-left: 60px;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.assembleia__div{
+    margin-left: 20px;
+}
+
+.nav__links li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+    position: relative;
+    font-weight: bold;
+}
+
+.nav__links li a::after{
+    content: '';
+    background: #3603b6;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav__links li a:hover::after{
+    width: 100%;
+}
+
+
+.sobre{
+    /*border: 2px solid red;*/
+    color: white;
+    font-size: 25px;
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 150px;
+    padding: 40px 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(images/sobre.jpg);
+}
+
+.sobre h1{
+    margin-left: 400px;
+}
+
+.sobre p{
+    margin-top: 10px;
+    padding: 20px;
+}
+
+
+
+
+.h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin: 100px auto;
+    margin-bottom: 1px;
+    padding: 10px 20px;
+}
+
+
+.encontrar{
+   /* border: 2px solid red;*/
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2px;
+    height: 600px;
+}
+
+.encontrar h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.mapa{
+    /*border: 2px solid black;*/
+    margin: 20px auto;
+    height: 500px;
+}
+
+.mapa-igreja{
+    height: 500px;
+    width: 100%;
+    border: none;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    margin-top: 2px;
+    background-color: black;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.Socialicons{
+   /* border: 2px solid blue;*/
+    display: flex;
+    justify-content: center;
+}
+
+.Socialicons a{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.Socialicons i{
+    font-size: 25px;
+    color: white;
+    opacity: 0.9;
+}
+
+.footerNav{
+    /*border: 2px yellow solid;*/
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.contact-form{
+    width: 85%;
+    max-width: 600px;
+    background: #f1f1f1;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    
+}
+
+.txtb{
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 8px 0;
+    padding: 2px 18px;
+}
+
+.txtb label{
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.txtb input, .txtb textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.btn{
+    width: 100%;
+    padding: 12px 18px;
+    background-color: rgb(91, 168, 91);
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+.footerContainer h4{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
